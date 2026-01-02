@@ -3,11 +3,11 @@ import { cva, type VariantProps } from 'class-variance-authority';
 import { twMerge } from 'tailwind-merge';
 
 const buttVariants = cva(
-  'focus-visible:ring-foreground border-foreground border-background shadow-raised active:shadow-inset inline-flex cursor-pointer items-center justify-center border-3 bg-linear-to-tl font-medium hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-97 disabled:pointer-events-none disabled:opacity-50',
+  'focus-visible:ring-foreground border-border shadow-raised active:shadow-inset inline-flex cursor-pointer items-center justify-center border-3 bg-linear-to-tl font-medium hover:opacity-90 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-97 disabled:pointer-events-none disabled:opacity-50',
   {
     variants: {
       variant: {
-        default: 'from-background to-highlight/75',
+        default: 'from-muted/5 to-muted/25',
         primary: 'text-primary from-primary/5 to-primary/25',
         destructive: 'text-destructive from-destructive/5 to-destructive/25',
         warning: 'text-warning from-warning/5 to-warning/25',
