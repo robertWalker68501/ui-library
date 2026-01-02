@@ -17,7 +17,7 @@ const Navbar = () => {
         }}
       >
         {theme === 'light' ? (
-          <Sun className='text-warning h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all' />
+          <Sun className='text-warning h-[1.2rem] w-[1.2rem]' />
         ) : (
           <Moon className='text-primary absolute h-[1.2rem] w-[1.2rem]' />
         )}
