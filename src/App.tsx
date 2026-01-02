@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from './components/Card.tsx';
+import NeuCheckBox from './components/CheckBox.tsx';
 import Navbar from './components/Navbar.tsx';
 import NeuSwitch from './components/Switch.tsx';
 
@@ -14,7 +15,7 @@ function App() {
   return (
     <main>
       <Navbar />
-      <div className='flex items-center gap-4 px-6'>
+      <div className='flex flex-wrap items-center gap-4 px-6'>
         <Button>Default</Button>
         <Button variant={'primary'}>Primary</Button>
         <Button variant={'success'}>Success</Button>
@@ -36,8 +37,9 @@ function App() {
               <li>Benefit 3</li>
             </ul>
           </CardContent>
-          <CardFooter>
+          <CardFooter className='flex flex-col gap-6'>
             <NeuSwitch />
+            <NeuCheckBox />
           </CardFooter>
         </Card>
       </div>
