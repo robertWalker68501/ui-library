@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-background: var(--color-zinc-200);
   --color-foreground: var(--color-zinc-700);
@@ -24,7 +26,15 @@
   .dark {
     --color-background: var(--color-zinc-900);
     --color-foreground: var(--color-zinc-100);
+    --color-muted: var(--color-zinc-700);
+    --color-muted-foreground: var(--color-zinc-400);
     --color-primary: var(--color-indigo-400);
+    --color-destructive: var(--color-red-400);
+    --color-warning: var(--color-orange-400);
+    --color-success: var(--color-green-400);
+    --color-info: var(--color-teal-400);
+    --color-shadow: rgba(0,0,0, 0.7);
+    --color-highlight: rgba(255,255,255, 0.15);
   }
 }
 
