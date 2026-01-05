@@ -9,6 +9,7 @@ import {
 } from './components/Card.tsx';
 import NeuCheckBox from './components/CheckBox.tsx';
 import Navbar from './components/Navbar.tsx';
+import { NeuSlider } from './components/Slider.tsx';
 import NeuSwitch from './components/Switch.tsx';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <CardFooter className='flex flex-col gap-6'>
             <NeuSwitch />
             <NeuCheckBox />
+            <NeuSlider />
           </CardFooter>
         </Card>
       </div>
